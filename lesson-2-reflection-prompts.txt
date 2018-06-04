@@ -1,23 +1,43 @@
-What happens when you initialize a repository? Why do you need to do it?
+1)What happens when you initialize a repository? Why do you need to do it?
 
-there will be a hidden file created called .git.This is to track the changes in this working directory and help version control.
+**there will be a hidden file created called .git.This is to track the changes in this working directory and help version control.
 
-How is the staging area different from the working directory and the repository?
+2)How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-staging area is an area between working directory and commit. If you want to commit sth, first put them into staging area. 
+**staging area is an area between working directory and commit. If you want to commit sth, first put them into staging area. 
 If you don't want to commit the files, you can easily regret and cancel it. Or you can put several files in staging area and commit them at once.
 
-How can you use the staging area to make sure you have one commit per logical
+3)How can you use the staging area to make sure you have one commit per logical
 change?
 
-What are some situations when branches would be helpful in keeping your history
+**we can put several changes to staging area or maybe just one change. After we look at the staging area and decide what changes should go together and make a logical change, then we can commit those ones.
+
+4)What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+**branches are used when I want different version of the project. For example, a game, I will release the formal game on master branch, but i might also want to try out easy-mode or a different language version. instead of making change on master branch, it's good to create other branches like "easy-mode","italian". These branches will have the same file as master branch when created, and when committing to new branch, first git checkout new branch  and then git commit -m.
 
-What is the result of merging two branches together? Why do we represent it in
+**If I have one same commit, but used for different version, i can also relate it with different branches.
+
+**easy to switch among different branches
+
+5)How do the diagrams help you visualize the branch structure?
+
+**easily see different commits in different branches
+
+6)What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
+**one branch's code will be merged into another branch.
+**in the diagram, we can easily where branches originate from and every commit's parent
+
+7)What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+**automatic merging
+pros:lessen the work load
+cons: might not be able to figure out the conflicts easily
+
+**manual merging
+pros: a lot of work to merge
+cons: can see what are conflicting with each other when manually merging
