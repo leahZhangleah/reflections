@@ -1,0 +1,47 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    By comparing two versions, you can see what have been changed and then find out if any bug is caused by these changes. If there are some typos, we can easily exclude it.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+1.You can see what progress you have made step by step.
+2.You can see differences between two versions easily.
+3.You can restore one version easily
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+pros:
+1.each commit is created with meaning, either fixing a bug, creating a new feature, or correcting the typo etc. They are easier to understand
+2.Save progress step by step
+3.Not too big or too small commit will make it easy to comprehend
+
+Cons:
+1.Programmer might forget to create commit
+2.Sometimes hard to decide what is an appropriate sized-commit
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+1.Because changes in different files make the change work. If we only commit one file, changes might not be valid. And if we treat each file separately, it could be easy to forget committing other related files.
+
+How can you use the commands git log and git diff to view the history of files?
+
+first use git clone + git uri to clone the files
+1.git log will show the history of all commits which include commit id, author, date, and commit message.
+2.we can use git diff with commits' ids to compare random two commits from git log and see what have been changed 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+1.I keep my last version saved, which means I can do whatever changes I want on my commits. And if some bugs happen, I just need to debug my latest commit, which makes the work more efficient.
+2.With the last working version saved, even if I have messed up something, I can always go back to the last version
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
